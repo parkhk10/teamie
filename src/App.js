@@ -51,7 +51,6 @@ const App = ({}) => {
       setRestaurants(json);
     }
     fetchRestaurants();
-    // fetchFilteredRestaurants();
   }, []);
   
   const classes = useStyles();
