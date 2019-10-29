@@ -95,7 +95,7 @@ const AppBar_header =  ({numPeople, setNumPeople, setBudget, setVibe}) => {
       <Container>
         <Toolbar>
           <Typography variant="h6" className={classes.title}>
-            Is it working this time?
+            Another change
           </Typography>
           <Button color="inherit">Login</Button>
         </Toolbar>
