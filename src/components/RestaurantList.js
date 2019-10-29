@@ -95,7 +95,7 @@ const AppBar_header =  ({numPeople, setNumPeople, setBudget, setVibe}) => {
       <Container>
         <Toolbar>
           <Typography variant="h6" className={classes.title}>
-            Welcome to Teamie!
+            Change Title Again
           </Typography>
           <Button color="inherit">Login</Button>
         </Toolbar>
