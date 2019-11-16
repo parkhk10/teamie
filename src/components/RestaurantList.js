@@ -321,11 +321,14 @@ const RestaurantList = ({restaurants, selectedRestaurants, setSelectedRestaurant
                 </Grid> */}
 
                 <Grid item xs={6}>
-                    {filteredRestaurants.map(r => <Restaurant key={r.id} 
+                    {filteredRestaurants.map(r => {
+                      console.log("r.id: " + (r.id).toString());
+                      return(
+                    <Restaurant key={(r.id).toString()} 
                                         restaurant={r}
                                         selectedRestaurants={selectedRestaurants}
                                         setSelectedRestaurants={setSelectedRestaurants}
-                                        />)}
+                    />)})}
                 </Grid>
 
                 <Grid item xs={6}>
