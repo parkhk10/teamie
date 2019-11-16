@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Grid from '@material-ui/core/Grid';
 import imgURL from '../images/rest1.jpg';
 import Chip from '@material-ui/core/Chip';
- 
+
 const Restaurant = ({key, restaurant, selectedRestaurants, setSelectedRestaurants}) => {
     // const {name, price, tables, type} = this.props
     // console.log("key: " + key)
@@ -39,7 +39,7 @@ const Restaurant = ({key, restaurant, selectedRestaurants, setSelectedRestaurant
     
     <Grid item xs={3}>
   <img src={imgURL}/>
-  <Chip label="Add to list" clickable color={btnColor} onClick={handleClick}/>
+  <Chip label="Add to list" clickable color={btnColor} onClick={handleClick} data-testid="addToPoll" />
   </Grid>
   
   </Grid>
