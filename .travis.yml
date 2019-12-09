@@ -6,4 +6,4 @@ script:
 after_success:
   - CI=false npm run build --project teamie-ci
   - npm install -g firebase-tools
-  - firebase deploy --token 1//040bwpZ0Rhl7tCgYIARAAGAQSNwF-L9IrAKkexFRttp5eJo7MkBjqPKpctTTLCk2NwHAA2hHUtfHszP5-W4dYMMKop97T--B7Vws --non-interactive
+  - firebase deploy --token 1//040bwpZ0Rhl7tCgYIARAAGAQSNwF-L9IrAKkexFRttp5eJo7MkBjqPKpctTTLCk2NwHAA2hHUtfHszP5-W4dYMMKop97T--B7Vws --non-interactive --project teamie-ci
