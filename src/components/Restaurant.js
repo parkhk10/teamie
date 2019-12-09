@@ -29,7 +29,7 @@ const Restaurant = ({key, restaurant, selectedRestaurants, setSelectedRestaurant
       <div className="restaurant-card">
        <Grid container spacing={3}>
         <Grid item xs={8}>
-     <h2 data-testid={"restaurant" + restaurant.id}>{restaurant.name}</h2>
+     <h2 data-testid={"restaurant" + restaurant.id} data-cy="restaurant">{restaurant.name}</h2>
      
      <h5>{restaurant.price} Lunch, Dinner Available Table Sizes: {restaurant.tables.map(size => <span>{size}, </span>)}</h5>
      <type>{restaurant.type}</type>
