@@ -39,7 +39,7 @@ const Restaurant = ({key, restaurant, selectedRestaurants, setSelectedRestaurant
     
     <Grid item xs={3}>
   <img src={imgURL}/>
-  <Chip label="Add to list" clickable color={btnColor} onClick={handleClick} data-testid="addToPoll" />
+  <Chip label="Add to list" clickable color={btnColor} onClick={handleClick} data-testid="addToPoll" data-cy={"addToPoll" + restaurant.id}/>
   </Grid>
   
   </Grid>

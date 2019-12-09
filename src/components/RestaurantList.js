@@ -71,7 +71,7 @@ const useStyles = makeStyles(theme => ({
 
             {
               selectedRestaurants.map( (r) => 
-              <Card className={classes.card}><Typography>{r.name}</Typography></Card>
+              <Card className={classes.card}><Typography data-cy="poll">{r.name}</Typography></Card>
               )
             }
           
